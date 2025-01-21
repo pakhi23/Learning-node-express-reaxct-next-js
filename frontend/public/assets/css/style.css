@@ -1,0 +1,13 @@
+/* styles/globals.css or specific CSS module for Register page */
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  /* Optional: Styling for inputs to highlight them if there's an error */
+  input:invalid {
+    border-color: red;
+  }

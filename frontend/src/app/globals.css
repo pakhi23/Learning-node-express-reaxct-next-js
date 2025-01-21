@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import '/frontend/public/assets/css/style.css';
+@import '/frontend/public/assets/icons/font-awesome/css/all.min.css';
+

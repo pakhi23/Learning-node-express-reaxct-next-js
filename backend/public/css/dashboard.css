@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #2D3B48;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 18px;
+    display: block;
+    padding: 12px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #1D2939;
+    color: #fff;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    background-color: #f1f3f6;
+    padding: 20px;
+    margin-left: 250px; /* Adjusting content to not overlap sidebar */
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.header p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Dashboard Summary Section */
+.dashboard-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.dashboard-summary > div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-summary h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.dashboard-summary ul {
+    list-style: none;
+    font-size: 16px;
+}
+
+.dashboard-summary ul li {
+    margin-bottom: 10px;
+}
+
+.dashboard-summary ul li strong {
+    color: #333;
+}
+
+/* Quick Actions Section */
+.quick-actions a {
+    color: #1E90FF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.quick-actions a:hover {
+    text-decoration: underline;
+}
+
+.quick-actions ul {
+    padding-left: 0;
+    font-size: 16px;
+}
+
+.quick-actions li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Style for cards, hover effect */
+.dashboard-summary > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relativ
